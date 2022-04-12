@@ -79,6 +79,10 @@ p{
     width: 60%;
 }
 
+.degradado{
+    background-image: linear-gradient(rgb(165, 165, 165), rgb(243, 243, 243));
+}
+
 /* Clases */
 
 .texto-corrido{
