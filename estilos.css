@@ -1,0 +1,475 @@
+* {
+    Margin:0;
+    padding:0;
+    }
+
+/* Estilos generales */
+ul{
+    list-style-type: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+nav{
+    background-color: #002aa2;
+    padding: 5px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Animaciones */
+.textoAnimado{
+    animation-name: texto;
+    animation-duration: 3s;
+}
+@keyframes texto {
+    from{
+        transform: translateX(-200px)
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.transicion{
+    transform: opacity 3s;
+}
+
+.transicion:hover{
+    opacity: 70%;
+}
+
+.crecimiento{
+    transform: width 3s;
+}
+
+.crecimiento:hover{
+    width: 60%;
+}
+
+/* Clases */
+
+.texto-corrido{
+    font-size: 20px;
+}
+    
+.negrita{
+    font-weight: bold;
+}
+
+.space{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.margenAbajo{
+    margin-bottom: 100px;
+}
+
+.h3Azul{
+    color: #002aa2;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+label{
+    font-family: 'Poppins', sans-serif;
+}
+
+div{
+    margin: 5%;
+    align-content: space-between;
+}
+
+.fondogris{
+    background-color: rgb(243, 243, 243);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0%;
+}
+
+.gris{
+    background-color: rgb(243, 243, 243);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.copyright{
+    font-size: medium;
+    padding-top: 10px;
+}
+
+/* MEDIA QUERIE DESKTOP */
+@media (min-width: 1024px){
+    ul li{
+        padding: 10px 35px;
+    }
+
+    /* GRIDS */
+    .grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: max-content;
+    }
+
+    #grid-area{
+    display: grid;
+    grid-template-areas:
+    "footer"
+    "menu"
+    "buscar"
+    "areas"
+    "proceso"
+    }
+
+    footer{
+    grid-area: footer;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 100%;
+    }
+
+    nav{
+    grid-area: menu;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    display: flex;
+    flex-flow: row;
+    padding: 15px;
+    justify-items: center;
+    }
+
+    .buscar{
+    grid-area: buscar;
+    grid-template-columns: 50% 40%;
+    justify-items: center;
+    align-items: center;
+    }
+
+    section{
+    grid-area: areas;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 500px 500px 500px;
+    padding: 100px;
+    margin: 0;
+    justify-content: space-around;
+    }
+
+    .proceso{
+    grid-area: proceso;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 100%;
+    }
+
+    /* IDs */
+    #justificado{
+    text-align: center;
+    margin-top: 30px;
+    }
+
+    #logoBlanco{
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 5%;
+    }
+
+    #copyright{
+        background-color: #2d3033;
+        padding: 5px;
+        color: white;
+    }
+
+    /* Flexbox */
+    .logo-flex{
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-flex{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+
+    .div-areas{
+        display: flex;
+        background-color: rgb(243, 243, 243);
+        padding-block: 100px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .div-areasAll{
+        display: flex;
+        background-color: rgb(243, 243, 243);
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 100px;
+        margin: 0;
+    }
+
+    .footer{
+        display: flex;
+        background-color: #002aa2;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: medium;
+        font-weight: 500;
+        vertical-align: middle;
+        line-height: 10px;
+    }
+
+    .imagenCentro{
+        display: flex;
+        justify-content: center;
+    }
+
+    .iconos{
+        grid-area: iconos;
+        display: flex;
+        grid-template-columns: 30% 30% 30%;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 50px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .contacto{
+        display: flex;
+        background-color: rgb(243, 243, 243);
+        padding: 50px 100px 50px 100px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .social-flex{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        padding-bottom: 100px;
+    }
+
+    .empresas{
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* BoxModeling */
+    .galeria-areas3{
+        padding-top: 100px;
+        padding-bottom: 0%;
+    }
+
+    .galeria-areas6{
+        padding-top: 30px;
+    }
+}
+
+/* MOBILE FIRST SMARTPHONE*/
+@media (max-width: 479px){
+     /* Flexbox mobile*/
+    .logo-flex{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* GRIDS mobile*/
+    .grid{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 100%;
+        grid-template-rows: max-content;
+        }
+    
+    #grid-area{
+        display: grid;
+        grid-template-areas:
+        "menu"
+        "footer"
+        "buscar"
+        "iconos"
+        "areasquienes"
+        "proceso"
+        "formulario"
+        }
+    
+        nav{
+            grid-area: menu;
+            grid-template-columns: 100%;
+            display: flex;
+            flex-flow: row;
+            padding: 15px;
+            justify-items: center;
+            }
+        
+        footer{
+            grid-area: footer;
+            grid-template-columns: 100%;
+            grid-template-rows: 50% 50% 50%;
+            text-align: center;
+            padding-bottom: 50px;
+            }
+        
+        .buscar{
+            grid-area: buscar;
+            grid-template-columns: 100%;
+            justify-items: center;
+            align-items: center;
+            padding: 20px;
+            }
+
+        span{
+            grid-area: iconos;
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: 100% 100% 100%;
+            justify-content: center;
+            text-align: center;
+            }
+        
+        .proceso{
+            grid-area: proceso;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 100%;
+            justify-content: center;
+            text-align: center;
+            }
+    
+        .contacto{
+            grid-area: formulario;
+            grid-template-columns: 70%;
+            display: flex;
+            background-color: rgb(243, 243, 243);
+            padding-bottom: 50px;
+            padding-top: 30px;
+            flex-direction: row;
+            justify-content: center;
+            }
+        
+    /* Clases mobile */
+        .footer{
+            display: flex;
+            background-color: #002aa2;
+            flex-direction: row;
+            justify-content: center;
+            padding: 30px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: medium;
+            font-weight: 500;
+            vertical-align: middle;
+            line-height: 30px;
+        }
+        
+        .space{
+            margin-top: 50px;
+            padding-bottom: 20px;
+        }
+
+        .spacemobile{
+            padding-top: 50px;
+            padding-bottom: 20px;
+            background-color: rgb(243, 243, 243);
+        }
+        
+        .margenAbajo{
+            margin-bottom: 60px;
+        }
+
+        .imagenCentro{
+            display: flex;
+            justify-content: center;
+        }
+
+        .div-areasAll{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .iconos{
+            grid-area: iconos;
+            display: flex;
+            grid-template-columns: 30% 30% 30%;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-bottom: 50px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .social-flex{
+            display: flex;
+            flex-flow: row;
+            justify-items: space-around;
+            padding: 50px;
+        }
+
+        .empresas{
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            flex-flow: row;
+
+        }
+
+        .mapa{
+            width: fit-content;
+            justify-content: center;
+        }
+
+        /* IDs mobile */
+        #logoBlanco{
+            justify-content: center;
+            margin-top: -70px;
+            padding-top: 30px;
+            }
+        
+        #copyright{
+                background-color: #2d3033;
+                padding: 5px;
+                color: white;
+            }
+
+        #justificado{
+            text-align: center;
+            margin-top: 10px;
+            }
+}
