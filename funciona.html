@@ -11,6 +11,8 @@
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <!-- Hoja de estilos -->
         <link rel="stylesheet" href="estilos.css">
+        <!-- Hoja de estilos Bootstrap LOCAL -->
+        <link rel="stylesheet" href="BOOTSTRAP-LOCAL/css/bootstrap.css">
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,14 +23,35 @@
         <header class="logo-flex">
             <img src="imagenes/logotipo_af.png" alt="logotipo_af" width="250">
         </header>
-        <!-- Menú -->
-        <nav id="grid-area">
-            <a href="index.html"><li>Inicio</li></a>
-            <a href="quienessomos.html"><li>¿quiénes somos?</li></a>
-            <a href="areas.html"><li>áreas de especialidad</li></a>
-            <a href="funciona.html"><li>¿cómo funciona?</li></a>
-            <a href="contacto.html"><li>contacto</li></a>
-        </nav>
+        <!-- Prueba menú bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-azul" style="padding-left: 0px;padding-right: 0px;height: 80px;">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="quienessomos.html">¿quiénes somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="areas.html">áreas de especialidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="funciona.html">¿cómo funciona?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contacto.html">contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<main>
     <img src="imagenes/FUNCIONA/como-funciona_af.png" alt="inicio" width="100%">
 <h1 class="space textoAnimado">Este es el proceso All Freelance:</h1>
     <!-- proceso -->
@@ -105,5 +128,7 @@
     </footer>
     <section id="copyright">
         <h2 class="copyright">&copy; 2022. Desarrollado por: Fernanda Macías.</h2> </section>
+    <!-- Javascript de bootstrap -->
+    <script>src="BOOTSTRAP-LOCAL/js/bootstrap.js"</script>
 </body>
 </html>

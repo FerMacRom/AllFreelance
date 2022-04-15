@@ -113,8 +113,11 @@ label{
 }
 
 div{
-    margin: 5%;
     align-content: space-between;
+}
+
+.h5slider{
+    font-size: 40px;
 }
 
 .fondogris{
@@ -275,8 +278,7 @@ div{
 
     .contacto{
         display: flex;
-        background-color: rgb(243, 243, 243);
-        padding: 50px 100px 50px 100px;
+        padding: 50px;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
@@ -285,7 +287,7 @@ div{
     .social-flex{
         display: flex;
         flex-flow: row;
-        justify-content: space-around;
+        justify-content: space-between;
         padding-bottom: 100px;
     }
 

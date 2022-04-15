@@ -11,6 +11,8 @@
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <!-- Hoja de estilos -->
         <link rel="stylesheet" href="estilos.css">
+        <!-- Hoja de estilos Bootstrap LOCAL -->
+        <link rel="stylesheet" href="BOOTSTRAP-LOCAL/css/bootstrap.css">
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,34 +23,80 @@
         <header class="logo-flex">
             <img src="imagenes/logotipo_af.png" alt="logotipo_af" width="250">
         </header>
-        <!-- Menú -->
-        <nav id="grid-area">
-            <a href="index.html"><li>Inicio</li></a>
-            <a href="quienessomos.html"><li>¿quiénes somos?</li></a>
-            <a href="areas.html"><li>áreas de especialidad</li></a>
-            <a href="funciona.html"><li>¿cómo funciona?</li></a>
-            <a href="contacto.html"><li>contacto</li></a>
-        </nav>
+    <!-- Prueba menú bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-azul" style="padding-left: 0px;padding-right: 0px;height: 80px;">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="quienessomos.html">¿quiénes somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="areas.html">áreas de especialidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="funciona.html">¿cómo funciona?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contacto.html">contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<main>
     <img src="imagenes/CONTACTO/contacto_af.png" alt="inicio" width="100%">
 <h1 class="space textoAnimado">Tenemos alcance mundial</h1>
-<main>
-    <section class="contacto" id="grid-area">
+    <section class="contacto container">
         <aside>
-<form action="contáctanos">
-    <label for="nombre">Nombre:</label>
-    <input type="text" name="nombre" placeholder="Nombre completo"><br>
-    <label for="correo">Correo:</label>
-    <input type="email" name="correo" placeholder="Correo Electrónico"><br>
-    <label for="estado">Estado:</label>
-    <input type="list" name="estado" placeholder="Selecciona un estado"><br>
-    <label for="telefono">Teléfono de contacto:</label>
-    <input type="tel" name="telefono" placeholder="Teléfono con lada"><br>
-    <label for="empresa">Empresa:</label>
-    <input type="text" name="empresa" placeholder="¿De qué empresa nos contactas?"><br>
-    <label for="area">Área de interés:</label>
-    <input type="text" name="area" placeholder="*Qué servicio te interesa contratar?"><br>
-    <input type="submit" class="margenAbajo" value="Enviar formulario"/>
-</form>
+    <!--Prueba formulario bootstrap-->
+    <div class="form-floating mb-3">
+        <input type="name" class="form-control" id="floatingInput" placeholder="Nombre y Apellido">
+        <label for="floatingInput">Nombre</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="cuenta@ejemplo.com">
+        <label for="floatingInput">Correo Electrónico</label>
+      </div>
+      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Estado / Ciudad" style="padding-bottom: 10px">
+      <datalist id="datalistOptions">
+        <option value="Aguascalientes">
+        <option value="Monterrey">
+        <option value="Ciudad de México">
+        <option value="Los Angeles">
+        <option value="Chicago">
+      </datalist>
+      <br>
+      <div class="form-floating">
+        <input type="tel" class="form-control" id="floatingPassword" placeholder="Teléfono con lada">
+        <label for="floatingPassword">Teléfono</label>
+      </div>
+      <br>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="Área de interés">
+        <label for="floatingInput">Área de interés</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Estoy de acuerdo con los términos y condiciones
+        </label>
+        <div class="invalid-feedback">
+          Debes marcar la casilla antes de enviar.
+        </div>
+      </div>
+    </div>
+      <button class="btn btn-primary" type="submit">Enviar formulario</button>
+    </div>
+      </div>
+    <!--Fin formulario-->        
 </aside>
 <aside>
 <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118472.4714477665!2d-102.36133973043573!3d21.88587923720414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ec143ae4d9fb%3A0x4016978679c5220!2sAguascalientes%2C%20Ags.!5e0!3m2!1ses!2smx!4v1647324316333!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -56,8 +104,8 @@
         </aside>
 </main>
 <!-- RRSS -->
-<h1 class="space">Síguenos en redes</h1>
-<section class="social-flex">
+<h1 class="space gris">Síguenos en redes</h1>
+<section class="social-flex container">
 <img src="imagenes/CONTACTO/facebook_af.png" alt="facebook" width="70">
 <img src="imagenes/CONTACTO/ig_af.png" alt="instagram" width="70">
 <img src="imagenes/CONTACTO/twitter_af.png" alt="twitter" width="70">
@@ -65,14 +113,16 @@
 <img src="imagenes/CONTACTO/linkedin_af.png" alt="linkedin" width="70">
 </section>
 <!-- Empresas -->
-<section class="empresas">
-    <h1 class="space">Empresas con las<br>que trabajamos</h1>
-    <img src="imagenes/CONTACTO/empresa1_contacto.png" alt="search_af" width="10%">
+<h1 class="space gris">Empresas con las que trabajamos</h1>
+<section class="social-flex container">
+    <img src="imagenes/CONTACTO/empresa1_contacto.png" alt="search_af" width="100px">
     <img src="imagenes/CONTACTO/empresa2_contacto.png" alt="search_af" width="10%">
     <img src="imagenes/CONTACTO/empresa3_contacto.png" alt="search_af" width="10%">
     <img src="imagenes/CONTACTO/empresa4_contacto.png" alt="search_af" width="10%">
     <img src="imagenes/CONTACTO/empresa5_contacto.png" alt="search_af" width="10%">
 </section>
+<!--Prueba carrusel bootstrap-->
+<!--Fin carrusel-->
 <footer class="footer" id="grid-area">
     <aside>
             <ul>
@@ -96,5 +146,7 @@
     </footer>
     <section id="copyright">
         <h2 class="copyright">&copy; 2022. Desarrollado por: Fernanda Macías.</h2> </section>
+        <!-- Javascript de bootstrap -->
+    <script>src="BOOTSTRAP-LOCAL/js/bootstrap.js"</script>
 </body>
 </html>
