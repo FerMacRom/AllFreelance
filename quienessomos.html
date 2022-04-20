@@ -24,33 +24,37 @@
     <img src="imagenes/logotipo_af.png" alt="logotipo_af" width="250">
     </header>
     <!-- Prueba menú bootstrap -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-azul" style="padding-left: 0px;padding-right: 0px;height: 80px;">
-        <div class="container-fluid">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="quienessomos.html">¿quiénes somos?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="areas.html">áreas de especialidad</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="funciona.html">¿cómo funciona?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="contacto.html">contacto</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="quienessomos.html">¿quiénes somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="areas.html">áreas de especialidad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="funciona.html">¿cómo funciona?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contacto.html">contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <!--Fin de menú-->
 <main>
     <img src="imagenes/QUIENESSOMOS/quienes-somos_af.png" alt="inicio" width="100%">
     <h1  class="space textoAnimado">All Freelance<br>es la empresa que necesitas</h1>
@@ -66,19 +70,24 @@
     <h1 class="space spacemobile fondogris">¿Por qué elegirnos?</h1>
     <!-- íconos -->
     <span id="grid-area" class="gris">
-    <div>
-        <img src="imagenes/QUIENESSOMOS/ICONOS/icono_ec.png" alt="search_af" width="100">
-        <h3>Especialistas Certificados</h3>
-    </div>
-    <div>
-        <img src="imagenes/QUIENESSOMOS/ICONOS/icono_team.png" alt="search_af" width="100">
-        <h3>Principales áreas para tu empresa</h3>
-    </div>
-    <div>
-        <img src="imagenes/QUIENESSOMOS/ICONOS/icono_facture.png" alt="search_af" width="100">
-        <h3>Facturación</h3>
-    </div>
+      <div class="container">
+        <div class="row" id="justificado">
+          <div class="col">
+            <img src="imagenes/QUIENESSOMOS/ICONOS/icono_ec.png" alt="search_af" width="100">
+            <h3>Especialistas Certificados</h3>
+          </div>
+          <div class="col">
+            <img src="imagenes/QUIENESSOMOS/ICONOS/icono_team.png" alt="search_af" width="100">
+            <h3>Principales áreas para tu empresa</h3>
+          </div>
+          <div class="col">
+            <img src="imagenes/QUIENESSOMOS/ICONOS/icono_facture.png" alt="search_af" width="100">
+            <h3>Facturación</h3>
+          </div>
+        </div>
+      </div>
     </span>
+    <!--Fin de íconos-->
     <div class="div-areasAll">
         <img class="transicion" src="imagenes/inicio/web_allfrelance.png" alt="web_af" width="15%">
         <img class="transicion" src="imagenes/inicio/programacion_allfrelance.png" alt="web_af" width="15%">

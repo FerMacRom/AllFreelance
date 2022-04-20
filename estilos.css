@@ -41,7 +41,7 @@ h3{
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 p{
@@ -184,7 +184,7 @@ div{
     align-items: center;
     }
 
-    section{
+    .areas{
     grid-area: areas;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 500px 500px 500px;
@@ -239,7 +239,7 @@ div{
 
     .div-areasAll{
         display: flex;
-        background-color: rgb(243, 243, 243);
+        background-color: rgba(0, 190, 229, 0.2);
         flex-direction: row;
         justify-content: space-around;
         padding: 100px;
@@ -354,7 +354,7 @@ div{
         
         .buscar{
             grid-area: buscar;
-            grid-template-columns: 100%;
+            grid-template-columns: 50% 40%;
             justify-items: center;
             align-items: center;
             padding: 20px;
@@ -459,6 +459,10 @@ div{
         .mapa{
             width: fit-content;
             justify-content: center;
+        }
+
+        .icono-bco{
+            border-color: white;
         }
 
         /* IDs mobile */
