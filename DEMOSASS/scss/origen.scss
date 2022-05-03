@@ -24,3 +24,29 @@ ul{
         }
 }
 }
+
+/*MIXIN aplicable a carrousel*/
+    @mixin carrouselAF ($ancho, $altura)
+        {
+            width: $ancho;
+            height: $altura;
+        }
+
+    .carrosuelAF{
+        @include carrouselAF (100%,800px)
+    }
+
+    /*MAPA*/
+    $mapacolores:(
+        botonhold: #000,
+        botonhover: #fff,
+        botonsucess: green,
+        botonfailed: red
+    );
+
+    /*MAPA each*/
+        @each $clave, $color in $mapacolores {
+            .boton-#{$clave} {
+                background-color: $color;
+        }
+    }

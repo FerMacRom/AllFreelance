@@ -24,4 +24,28 @@ ul ul li {
   list-style-type: circle;
 }
 
+/*MIXIN aplicable a carrousel*/
+.carrosuelAF {
+  width: 100%;
+  height: 800px;
+}
+
+/*MAPA*/
+/*MAPA each*/
+.boton-botonhold {
+  background-color: #000;
+}
+
+.boton-botonhover {
+  background-color: #fff;
+}
+
+.boton-botonsucess {
+  background-color: green;
+}
+
+.boton-botonfailed {
+  background-color: red;
+}
+
 /*# sourceMappingURL=destino.css.map */
